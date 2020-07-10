@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FC } from 'react';
+// import { Button } from 'antd';
 import './App.css';
+// import ProductList from "./components/ProductList";
+import LayoutMain from "./components/LayoutMain";
 
-function App() {
-  return (
+/*
+const printDeleteRecord = (id: string) => console.log(id);
+const products = [
+    {name: 'test1', id: 1, key: 1},
+    {name: 'test2', id: 2, key: 2},
+    {name: 'test3', id: 3, key: 3},
+    {name: 'test4', id: 4, key: 4},
+];
+*/
+
+const App: FC = () => (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+{/*
+        <Button type="primary">Button</Button>
+        <ProductList onDelete={printDeleteRecord} products={products} />
+*/}
+    <LayoutMain/>
     </div>
-  );
-}
+);
 
 export default App;
